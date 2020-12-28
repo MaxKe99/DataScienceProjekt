@@ -8,7 +8,7 @@ from Giveme5W1H.extractor.tools.file.handler import Handler
 # giveme5w1h-corenlp
 
 if __name__ == '__main__':
-    basePath = "tbd"
+    basePath = '/home/mkette2s/DataScienceProjekt/
 
     # logger setup
     log = logging.getLogger('GiveMe5W')
