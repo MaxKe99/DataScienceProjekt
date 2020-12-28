@@ -24,7 +24,7 @@ if __name__ == '__main__':
     # giveme5w setup - with defaults
     extractor = MasterExtractor()
 
-    inputPath = basePath + '/data'
+    inputPath = basePath + '/data/bbc.com'
     outputPath = basePath + '/output'
     preprocessedPath = basePath + '/cache'
 
