@@ -55,14 +55,16 @@ if __name__ == '__main__':
 
     doc = extractor.parse(doc)
 
-    W5 = ['who', 'what', 'when', 'where', 'why', 'how']
-    for w in W5:
-    
-        top_answer = doc.get_top_answer(w)
+    top_who_answer = doc.get_top_answer('who').get_parts_as_text()
+    top_what_answer = doc.get_top_answer('what').get_parts_as_text()
+    top_when_answer = doc.get_top_answer('when').get_parts_as_text()
+    top_where_answer = doc.get_top_answer('where').get_parts_as_text()
+    top_why_answer = doc.get_top_answer('why').get_parts_as_text()
+    top_how_answer = doc.get_top_answer('how').get_parts_as_text()
 
-    print(type(top_answer))
-    
-    for t in top_answer:
-        score = t.get_score()
-        response = t.get_json()
-        print(response)
+    print(top_who_answer)
+    print(top_what_answer)
+    print(top_when_answer)
+    print(top_where_answer)
+    print(top_why_answer)
+    print(top_how_answer)
