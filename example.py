@@ -60,6 +60,8 @@ if __name__ == '__main__':
     
         top_answer = doc.get_top_answer(w)
 
+    print(type(top_answer))
+    
     for t in top_answer:
         score = t.get_score()
         response = t.get_json()
