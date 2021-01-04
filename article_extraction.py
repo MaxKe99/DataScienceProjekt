@@ -4,10 +4,6 @@ import os
 from Giveme5W1H.extractor.extractor import MasterExtractor
 from Giveme5W1H.extractor.tools.file.handler import Handler
 
-from geopy.geocoders import Nominatim
-
-geolocator = Nominatim(user_agent="GiveMe5W1H_analysis")
-
 # don`t forget to start up core_nlp_host
 # giveme5w1h-corenlp
 
