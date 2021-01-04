@@ -14,7 +14,7 @@ def main():
     answers = []
     questions = ['who', 'what', 'when', 'where', 'why', 'how']
     for q in questions:
-        doc.get_top_answer(q).get_parts_as_text()
+        answers.append(doc.get_top_answer(q).get_parts_as_text())
     for i in range(len(answers)):
         print(answers[i])
 
