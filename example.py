@@ -55,16 +55,19 @@ if __name__ == '__main__':
 
     doc = extractor.parse(doc)
 
-    top_who_answer = doc.get_top_answer('who')
-    top_what_answer = doc.get_top_answer('what')
-    top_when_answer = doc.get_top_answer('when')
-    top_where_answer = doc.get_top_answer('where')
-    top_why_answer = doc.get_top_answer('why')
-    top_how_answer = doc.get_top_answer('how')
+    W5 = ['who', 'what', 'when', 'where', 'why', 'how']
+    for w in W5:
+    
+        top_answer = doc.get_top_answer(w)
 
-    print(top_who_answer.get_parts_as_text())
-    print(top_what_answer.get_parts_as_text())
-    print(top_when_answer.get_parts_as_text())
-    print(top_where_answer.get_parts_as_text())
-    print(top_why_answer.get_parts_as_text())
-    print(top_how_answer.get_parts_as_text())
+    for t in top_answer:
+        score = t.get_score()
+        response = t.get_json()
+        print(response)
+        for k, v in response.items():
+            if k is 'parts':
+                for vl in v:
+                    d, pos = vl
+                        ner = d['nlpToken']['ner']
+                        #print(d['nlpToken']['ner'])
+                        #print(d['nlpToken']['pos'])
