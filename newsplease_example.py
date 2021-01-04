@@ -11,7 +11,12 @@ def main():
         'https://www.foxnews.com/politics/house-democrat-subpoenas-mnuchin-irs-for-trumps-tax-returns')
     doc = Document.from_newsplease(article)
     doc = extractor.parse(doc)
-    answers = doc.get_top_answer('who').get_parts_as_text()
+    answers = []
+    questions = ['who', 'what', 'when', 'where', 'why', 'how']
+    for q in questions:
+        doc.get_top_answer(q).get_parts_as_text()
+    for i in range(len(answers)):
+        print(answers[i])
 
 
 if __name__ == '__main__':
