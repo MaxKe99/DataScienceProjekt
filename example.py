@@ -64,10 +64,3 @@ if __name__ == '__main__':
         score = t.get_score()
         response = t.get_json()
         print(response)
-        for k, v in response.items():
-            if k is 'parts':
-                for vl in v:
-                    d, pos = vl
-                        ner = d['nlpToken']['ner']
-                        #print(d['nlpToken']['ner'])
-                        #print(d['nlpToken']['pos'])
