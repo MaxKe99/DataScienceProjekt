@@ -26,11 +26,22 @@ def main():
         doc = extractor.parse(doc)
         answers = []
         print(url)
-        for q in questions:
-            answers.append(doc.get_top_answer(q).get_parts_as_text())
-        for i in range(len(answers)):
-            print(answers[i])
-        print('\n')
+        #for q in questions:
+        #    answers.append(doc.get_top_answer(q).get_parts_as_text())
+        
+        #for i in range(len(answers)):
+        #    print(answers[i])
+        
+        top_who_answer = doc.get_top_answer('who').get_parts_as_text()
+        top_what_answer = doc.get_top_answer('what').get_parts_as_text()
+        top_where_answer = doc.get_top_answer('where').get_parts_as_text()
+
+
+        print(top_who_answer)
+        print(top_what_answer)
+        print(top_where_answer)
+
+        #print('\n')
 
 
 if __name__ == '__main__':
