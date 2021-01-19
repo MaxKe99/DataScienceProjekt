@@ -4,7 +4,8 @@ from Giveme5W1H.extractor.document import Document
 from Giveme5W1H.extractor.extractor import MasterExtractor
 
 extractor = MasterExtractor()
-articles = ["https://edition.cnn.com/2021/01/11/politics/biden-oath-of-office-capitol/index.html"]
+articles = ["https://edition.cnn.com/2021/01/11/tech/parler-amazon-lawsuit/index.html",
+            "https://edition.cnn.com/2021/01/05/tech/windows-10-redesign-trnd/index.html"]
             
 questions = ['who', 'what', 'when', 'where', 'why', 'how']
 
