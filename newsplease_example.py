@@ -122,7 +122,7 @@ def main():
                 answers.append("No answer provided.")
         
         print(url)
-        for i in range(len(answers):
+        for i in range(len(answers)):
             print(answers[i])
         print("\n")
         
