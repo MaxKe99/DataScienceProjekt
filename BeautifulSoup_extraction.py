@@ -16,7 +16,7 @@ def getTextAndDateFromSite(url):
 	soup = BeautifulSoup(html_page, 'lxml')
 	text = soup.find_all('p')
 	
-	result = []
+	result = ["", ""]
 	
 	output = output = soup.find('h1').text + ' '
 	blacklist = [
