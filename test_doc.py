@@ -33,15 +33,13 @@ President-elect Donald Trump is set to inherit America's longest war with no end
 date_publish = '2016-11-10 07:44:00'
 
 def main():
-
 	log = logging.getLogger('GiveMe5W')
-    log.setLevel(logging.DEBUG)
-    sh = logging.StreamHandler()
-    sh.setLevel(logging.DEBUG)
-    log.addHandler(sh)
+	log.setLevel(logging.DEBUG)
+	sh = logging.StreamHandler()
+	sh.setLevel(logging.DEBUG)
+	log.addHandler(sh)
 
-    doc = Document(title, lead, text, date_publish)
-	
+	doc = Document(title, lead, text, date_publish)
 	top_who_answer = doc.get_top_answer('who').get_parts_as_text()
     top_what_answer = doc.get_top_answer('what').get_parts_as_text()
     top_when_answer = doc.get_top_answer('when').get_parts_as_text()
