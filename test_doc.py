@@ -44,7 +44,6 @@ def main():
         except:
             answers.append("No answer provided.")
         
-    print(url)
     for i in range(len(answers)):
         print(answers[i])
     print("\n")
