@@ -39,7 +39,7 @@ def getTextAndDateFromSite(url):
 			
 			
 	result.append(output)
-	results.append(soup.time.attrs['datetime'].replace('T', ' ').replace('Z', '')[:-4])
+	result.append(soup.time.attrs['datetime'].replace('T', ' ').replace('Z', '')[:-4])
 		
 	return result
 	
