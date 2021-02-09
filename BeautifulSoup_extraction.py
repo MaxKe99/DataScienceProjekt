@@ -5,7 +5,7 @@ from Giveme5W1H.extractor.document import Document
 from Giveme5W1H.extractor.extractor import MasterExtractor
 
 extractor = MasterExtractor()
-articles = ["https://www.nytimes.com/2020/12/11/arts/dance/othella-dallas-dead.html"]
+articles = ["https://www.bbc.com/news/uk-scotland-scotland-politics-55396311"]
             
 questions = ['who', 'what', 'when', 'where', 'why', 'how']
 
@@ -16,9 +16,12 @@ def getTextAndDateFromSite(url):
 	soup = BeautifulSoup(html_page, 'lxml')
 	text = soup.find_all('p')
 	
-	result = ["", ""]
+	result = []
 	
-	output = output = soup.find('h1').text + ' '
+	result.append(soup.find('h1').text)
+	result.append(soup.find('p').text)
+	
+	output = ''
 	blacklist = [
 		'[document]',
 		'noscript',
@@ -35,11 +38,8 @@ def getTextAndDateFromSite(url):
 			output += '{} '.format(t.text)
 			
 			
-	result[0] = output
-		
-	time = soup.find('time')
-	if time.has_attr('datetime'):
-		result[1] = time['datetime']
+	result.append(output)
+	results.append(soup.time.attrs['datetime'].replace('T', ' ').replace('Z', '')[:-4])
 		
 	return result
 	
@@ -47,7 +47,7 @@ def main():
 
     for url in articles:
         article = getTextAndDateFromSite(url)
-        doc = Document.from_text(article[0], article[1])
+        doc = Document(article[0], article[1], article[2], article[3])
         answers = []
         
         for q in questions:
