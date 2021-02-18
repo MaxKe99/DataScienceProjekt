@@ -1,10 +1,11 @@
 import requests
 from bs4 import BeautifulSoup
 
+import logging
+
 from Giveme5W1H.extractor.document import Document
 from Giveme5W1H.extractor.extractor import MasterExtractor
 
-extractor = MasterExtractor()
 articles = ["https://www.bbc.com/news/uk-scotland-scotland-politics-55396311"]
             
 questions = ['who', 'what', 'when', 'where', 'why', 'how']
@@ -44,10 +45,20 @@ def getTextAndDateFromSite(url):
 	return result
 	
 def main():
-
+    
+    log = logging.getLogger('GiveMe5W')
+    log.setLevel(logging.DEBUG)
+    sh = logging.StreamHandler()
+    sh.setLevel(logging.DEBUG)
+    log.addHandler(sh)
+    
+    extractor = MasterExtractor()
+    
     for url in articles:
         article = getTextAndDateFromSite(url)
-        doc = Document(article[0] + article[1] +article[2], article[3])
+        doc = Document.from_text(article[0] + article[1] +article[2], article[3])
+        doc = extractor.parse(doc)
+        
         answers = []
         
         for q in questions:
