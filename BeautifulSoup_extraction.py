@@ -21,7 +21,7 @@ def getTextAndDateFromSite(url):
 	result.append(soup.find('h1').text)
 	result.append(soup.find('p').text)
 	
-	output = ''
+	output = """ """
 	blacklist = [
 		'[document]',
 		'noscript',
@@ -47,7 +47,7 @@ def main():
 
     for url in articles:
         article = getTextAndDateFromSite(url)
-        doc = Document(article[0], article[1], article[2], article[3])
+        doc = Document(article[0] + article[1] +article[2], article[3])
         answers = []
         
         for q in questions:
