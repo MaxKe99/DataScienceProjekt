@@ -65,7 +65,7 @@ def getTextAndDateFromSite(url):
 			
 			
 	result.append(output)
-    result.append(soup.find("p", {"class": "update-time"}).text)
+	result.append(soup.find("p", {"class": "update-time"}).text)
 		
 	return result
 	
