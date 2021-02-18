@@ -35,6 +35,14 @@ articles = ["https://edition.cnn.com/2020/12/18/investing/tesla-sp500-winners/in
             
 questions = ['who', 'what', 'when', 'where', 'why', 'how']
 
+def monthHelper(str):
+    if str[:7] == "January ":
+        return "01-" + str[-3:-1]
+    elif str[:8] == "December":
+        return "12-" + str[-2:]
+    else:
+        return "00"
+
 def getTextAndDateFromSite(url):
 	res = requests.get(url)
 	html_page = res.content
@@ -65,7 +73,10 @@ def getTextAndDateFromSite(url):
 			
 			
 	result.append(output)
-	result.append(soup.find("p", {"class": "update-time"}).text)
+	date = soup.find("p", {"class": "update-time"}).text[28:][:17]
+	dateForm = ""
+	dateForm += date[-4:] + "-" + monthHelper(date[:11])
+	result.append(dateForm)
 		
 	return result
 	

@@ -31,31 +31,6 @@ articles = ['https://www.bbc.com/news/business-55390858',
             'https://www.bbc.com/news/technology-55403473',
             'https://www.bbc.com/news/technology-55415350',
             'https://www.bbc.com/news/technology-55426212',
-            "https://edition.cnn.com/2020/12/18/investing/tesla-sp500-winners/index.html",
-            "https://edition.cnn.com/2020/12/20/investing/elon-musk-bitcoin-dogecoin/index.html",
-            "https://edition.cnn.com/2020/12/21/business/uk-ports-covid-brexit-shortages/index.html",
-            "https://edition.cnn.com/2020/12/21/business/walmart-returns-at-home/index.html",
-            "https://edition.cnn.com/2020/12/21/investing/dow-stock-market-today-coronavirus/index.html",
-            "https://edition.cnn.com/2020/12/21/entertainment/movies-2020-column/index.html",
-            "https://edition.cnn.com/2020/12/22/entertainment/chris-pratt-chris-evans-chris-hemsworth/index.html",
-            "https://edition.cnn.com/2020/12/22/entertainment/rachel-zoe-son-falls-ski-lift/index.html",
-            "https://edition.cnn.com/2020/12/21/entertainment/zooey-deschanel-katy-perry-music-video-trnd/index.html",
-            "https://edition.cnn.com/2020/12/21/entertainment/ed-sheeran-afterglow-song/index.html",
-            "https://edition.cnn.com/2020/12/22/politics/biden-key-lines-christmas-address/index.html",
-            "https://edition.cnn.com/2021/01/11/politics/biden-oath-of-office-capitol/index.html",
-            "https://edition.cnn.com/2020/12/22/politics/biden-twitter-white-house-accounts/index.html",
-            "https://edition.cnn.com/2020/12/22/politics/alex-padilla-senate-gavin-newsom/index.html",
-            "https://edition.cnn.com/2020/12/22/politics/daca-texas/index.html",
-            "https://edition.cnn.com/2020/12/23/sport/los-angeles-lakers-clippers-ring-ceremony-nba-championship-spt-intl/index.html",
-            "https://edition.cnn.com/2020/12/23/football/lionel-messi-break-pele-record-barcelona-valladolid-spt-intl/index.html",
-            "https://edition.cnn.com/2020/12/23/sport/tokyo-olympic-games-opening-closing-ceremonies-spt-intl/index.html",
-            "https://edition.cnn.com/2020/12/21/sport/tom-brady-atlanta-falcons-tampa-bay-buccaneers-new-england-patriots-nfl-spt-intl/index.html",
-            "https://edition.cnn.com/2020/12/22/sport/pittsburgh-steelers-cincinnati-bengals-muppets-nfl-spt-intl/index.html",
-            "https://edition.cnn.com/2021/01/11/tech/parler-amazon-lawsuit/index.html",
-            "https://edition.cnn.com/2021/01/05/tech/windows-10-redesign-trnd/index.html",
-            "https://edition.cnn.com/2020/12/18/tech/smic-us-sanctions-intl-hnk/index.html",
-            "https://edition.cnn.com/2020/12/23/tech/nikola-garbage-truck-canceled/index.html",
-            "https://edition.cnn.com/2020/12/18/tech/alibaba-cloud-ipvm-uyghurs-intl-hnk/index.html",
             "https://www.nytimes.com/2020/12/21/business/eurostar-pandemic-train-europe.html",
             "https://www.nytimes.com/2020/12/20/business/economy/stimulus-bill-congress.html",
             "https://www.nytimes.com/2020/12/21/business/stocks-sink-as-a-fast-spreading-virus-strain-emerges-in-britain-and-overshadows-a-stimulus-deal.html",
@@ -81,33 +56,71 @@ articles = ['https://www.bbc.com/news/business-55390858',
             "https://www.nytimes.com/2020/12/17/technology/google-antitrust-monopoly.html",
             "https://www.nytimes.com/2020/12/22/technology/augmented-reality-online-shopping.html",
             "https://www.nytimes.com/2020/12/22/technology/georgia-senate-runoff-misinformation.html",
-            "https://www.euronews.com/2020/12/17/google-sued-by-10-us-states-for-anti-competitive-online-ad-sales",
-            "https://www.euronews.com/2020/12/21/global-challenges-turned-into-constructive-solutions-for-all",
-            "https://www.euronews.com/2020/11/17/europe-s-gdpr-provides-our-privacy-model-around-the-world-apple-vp-says",
-            "https://www.euronews.com/2020/11/17/don-t-cut-back-on-military-spending-because-of-covid-19-european-defence-chief-warns",
-            "https://www.euronews.com/2020/11/17/how-can-recycling-help-the-european-union-achieve-its-green-targets",
-            "https://www.euronews.com/living/2020/07/01/zac-efron-looks-for-solutions-to-climate-change-in-new-netflix-series",
-            "https://www.euronews.com/2019/11/06/catherine-deneuve-76-treated-in-paris-hospital-after-limited-stroke-afp",
-            "https://www.euronews.com/2019/06/27/alanis-morissette-pregnancy-45-i-had-freak-out-joy-freak-t157206",
-            "https://www.euronews.com/living/2019/08/22/stella-mccartney-and-taylor-swift-team-up-for-clothing-and-accessories",
-            "https://www.euronews.com/2019/05/01/pink-reveals-she-had-miscarriage-17-you-feel-your-body-t153175",
-            "https://www.euronews.com/2020/10/08/spanish-government-wants-to-repeal-parental-consent-rule-for-abortions",
-            "https://www.euronews.com/2020/08/06/twitter-to-label-government-officials-and-state-backed-news-accounts",
-            "https://www.euronews.com/2019/11/12/president-jimmy-carter-undergo-procedure-relieve-pressure-brain-falls-n1080361",
-            "https://www.euronews.com/2019/11/09/bloomberg-faces-big-challenges-if-he-leaps-into-2020-white-house-race",
-            "https://www.euronews.com/2019/11/08/former-nyc-mayor-michael-bloomberg-considering-jump-into-us-presidential-race",
-            "https://www.euronews.com/2020/12/14/champions-league-draw-sees-neymar-s-psg-take-on-barcelona-as-holders-bayern-face-lazio",
-            "https://www.euronews.com/2020/11/19/new-fifa-rules-to-protect-female-players-maternity-rights",
-            "https://www.euronews.com/2020/12/01/premier-league-postpones-first-fixture-since-resumption-during-covid-19-pandemic",
-            "https://www.euronews.com/2020/10/31/england-win-2020-six-nations-championship-after-ireland-fail-in-paris",
-            "https://www.euronews.com/2020/10/29/coronavirus-russia-wants-to-keep-sports-fans-in-stadiums-despite-covid-19-pandemic",
-            "https://www.euronews.com/2020/12/21/new-hacking-scams-here-s-how-to-avoid-them",
-            "https://www.euronews.com/2020/12/19/humans-and-robots-battle-it-out-for-control-of-the-future",
-            "https://www.euronews.com/2020/11/26/europe-signs-86-million-deal-to-bring-space-trash-home",
-            "https://www.euronews.com/2020/11/09/a-win-for-global-human-rights-as-eu-agrees-on-tighter-rules-for-surveillance-tech-exports",
-            "https://www.euronews.com/2020/10/02/cutting-carbon-emissions-and-power-costs-in-southeast-asia"]
-            
+            ]
+
+articlesCNN = ["https://edition.cnn.com/2020/12/18/investing/tesla-sp500-winners/index.html",
+               "https://edition.cnn.com/2020/12/20/investing/elon-musk-bitcoin-dogecoin/index.html",
+               "https://edition.cnn.com/2020/12/21/business/uk-ports-covid-brexit-shortages/index.html",
+               "https://edition.cnn.com/2020/12/21/business/walmart-returns-at-home/index.html",
+               "https://edition.cnn.com/2020/12/21/investing/dow-stock-market-today-coronavirus/index.html",
+               "https://edition.cnn.com/2020/12/21/entertainment/movies-2020-column/index.html",
+               "https://edition.cnn.com/2020/12/22/entertainment/chris-pratt-chris-evans-chris-hemsworth/index.html",
+               "https://edition.cnn.com/2020/12/22/entertainment/rachel-zoe-son-falls-ski-lift/index.html",
+               "https://edition.cnn.com/2020/12/21/entertainment/zooey-deschanel-katy-perry-music-video-trnd/index.html",
+               "https://edition.cnn.com/2020/12/21/entertainment/ed-sheeran-afterglow-song/index.html",
+               "https://edition.cnn.com/2020/12/22/politics/biden-key-lines-christmas-address/index.html",
+               "https://edition.cnn.com/2021/01/11/politics/biden-oath-of-office-capitol/index.html",
+               "https://edition.cnn.com/2020/12/22/politics/biden-twitter-white-house-accounts/index.html",
+               "https://edition.cnn.com/2020/12/22/politics/alex-padilla-senate-gavin-newsom/index.html",
+               "https://edition.cnn.com/2020/12/22/politics/daca-texas/index.html",
+               "https://edition.cnn.com/2020/12/23/sport/los-angeles-lakers-clippers-ring-ceremony-nba-championship-spt-intl/index.html",
+               "https://edition.cnn.com/2020/12/23/football/lionel-messi-break-pele-record-barcelona-valladolid-spt-intl/index.html",
+               "https://edition.cnn.com/2020/12/23/sport/tokyo-olympic-games-opening-closing-ceremonies-spt-intl/index.html",
+               "https://edition.cnn.com/2020/12/21/sport/tom-brady-atlanta-falcons-tampa-bay-buccaneers-new-england-patriots-nfl-spt-intl/index.html",
+               "https://edition.cnn.com/2020/12/22/sport/pittsburgh-steelers-cincinnati-bengals-muppets-nfl-spt-intl/index.html",
+               "https://edition.cnn.com/2021/01/11/tech/parler-amazon-lawsuit/index.html",
+               "https://edition.cnn.com/2021/01/05/tech/windows-10-redesign-trnd/index.html",
+               "https://edition.cnn.com/2020/12/18/tech/smic-us-sanctions-intl-hnk/index.html",
+               "https://edition.cnn.com/2020/12/23/tech/nikola-garbage-truck-canceled/index.html",
+               "https://edition.cnn.com/2020/12/18/tech/alibaba-cloud-ipvm-uyghurs-intl-hnk/index.html",
+               ]
+
+articlesEuro = ["https://www.euronews.com/2020/12/17/google-sued-by-10-us-states-for-anti-competitive-online-ad-sales",
+                "https://www.euronews.com/2020/12/21/global-challenges-turned-into-constructive-solutions-for-all",
+                "https://www.euronews.com/2020/11/17/europe-s-gdpr-provides-our-privacy-model-around-the-world-apple-vp-says",
+                "https://www.euronews.com/2020/11/17/don-t-cut-back-on-military-spending-because-of-covid-19-european-defence-chief-warns",
+                "https://www.euronews.com/2020/11/17/how-can-recycling-help-the-european-union-achieve-its-green-targets",
+                "https://www.euronews.com/living/2020/07/01/zac-efron-looks-for-solutions-to-climate-change-in-new-netflix-series",
+                "https://www.euronews.com/2019/11/06/catherine-deneuve-76-treated-in-paris-hospital-after-limited-stroke-afp",
+                "https://www.euronews.com/2019/06/27/alanis-morissette-pregnancy-45-i-had-freak-out-joy-freak-t157206",
+                "https://www.euronews.com/living/2019/08/22/stella-mccartney-and-taylor-swift-team-up-for-clothing-and-accessories",
+                "https://www.euronews.com/2019/05/01/pink-reveals-she-had-miscarriage-17-you-feel-your-body-t153175",
+                "https://www.euronews.com/2020/10/08/spanish-government-wants-to-repeal-parental-consent-rule-for-abortions",
+                "https://www.euronews.com/2020/08/06/twitter-to-label-government-officials-and-state-backed-news-accounts",
+                "https://www.euronews.com/2019/11/12/president-jimmy-carter-undergo-procedure-relieve-pressure-brain-falls-n1080361",
+                "https://www.euronews.com/2019/11/09/bloomberg-faces-big-challenges-if-he-leaps-into-2020-white-house-race",
+                "https://www.euronews.com/2019/11/08/former-nyc-mayor-michael-bloomberg-considering-jump-into-us-presidential-race",
+                "https://www.euronews.com/2020/12/14/champions-league-draw-sees-neymar-s-psg-take-on-barcelona-as-holders-bayern-face-lazio",
+                "https://www.euronews.com/2020/11/19/new-fifa-rules-to-protect-female-players-maternity-rights",
+                "https://www.euronews.com/2020/12/01/premier-league-postpones-first-fixture-since-resumption-during-covid-19-pandemic",
+                "https://www.euronews.com/2020/10/31/england-win-2020-six-nations-championship-after-ireland-fail-in-paris",
+                "https://www.euronews.com/2020/10/29/coronavirus-russia-wants-to-keep-sports-fans-in-stadiums-despite-covid-19-pandemic",
+                "https://www.euronews.com/2020/12/21/new-hacking-scams-here-s-how-to-avoid-them",
+                "https://www.euronews.com/2020/12/19/humans-and-robots-battle-it-out-for-control-of-the-future",
+                "https://www.euronews.com/2020/11/26/europe-signs-86-million-deal-to-bring-space-trash-home",
+                "https://www.euronews.com/2020/11/09/a-win-for-global-human-rights-as-eu-agrees-on-tighter-rules-for-surveillance-tech-exports",
+                "https://www.euronews.com/2020/10/02/cutting-carbon-emissions-and-power-costs-in-southeast-asia"
+                ]
+                
 questions = ['who', 'what', 'when', 'where', 'why', 'how']
+
+def monthHelper(str):
+    if str[:7] == "January ":
+        return "01-" + str[-3:-1]
+    elif str[:8] == "December":
+        return "12-" + str[-2:]
+    else:
+        return "00"
 
 def getTextAndDateFromSite(url):
 	res = requests.get(url)
@@ -142,6 +155,77 @@ def getTextAndDateFromSite(url):
 	result.append(soup.time.attrs['datetime'].replace('T', ' ').replace('Z', '')[:-4])
 		
 	return result
+    
+def getTextAndDateFromSiteCNN(url):
+	res = requests.get(url)
+	html_page = res.content
+	
+	soup = BeautifulSoup(html_page, 'lxml')
+	text = soup.find_all("div", {"class": "zn-body__paragraph"})
+	
+	result = []
+	
+	result.append(soup.find('h1').text)
+	result.append(soup.find('p').text)
+	
+	output = """ """
+	blacklist = [
+		'[document]',
+		'noscript',
+		'header',
+		'html',
+		'meta',
+		'head', 
+		'input',
+		'script'
+		]
+
+	for t in text:
+		if t.parent.name not in blacklist:
+			output += '{} '.format(t.text)
+			
+			
+	result.append(output)
+	date = soup.find("p", {"class": "update-time"}).text[28:][:17]
+	dateForm = ""
+	dateForm += date[-4:] + "-" + monthHelper(date[:11])
+	result.append(dateForm)
+		
+	return result
+    
+def getTextAndDateFromSiteEuro(url):
+	res = requests.get(url)
+	html_page = res.content
+	
+	soup = BeautifulSoup(html_page, 'lxml')
+	text = soup.find_all('p')
+	
+	result = []
+	
+	result.append(soup.find('h1').text)
+	result.append(soup.find('p').text)
+	
+	output = """ """
+	blacklist = [
+		'[document]',
+		'noscript',
+		'header',
+		'html',
+		'meta',
+		'head', 
+		'input',
+		'script'
+		]
+
+	for t in text:
+		if t.parent.name not in blacklist:
+			output += '{} '.format(t.text)
+			
+			
+	result.append(output)
+	result.append(soup.time.attrs['datetime'])
+		
+	return result
 	
 def main():
     
@@ -155,6 +239,42 @@ def main():
     
     for url in articles:
         article = getTextAndDateFromSite(url)
+        doc = Document.from_text(article[0] + article[1] +article[2], article[3])
+        doc = extractor.parse(doc)
+        
+        answers = []
+        
+        for q in questions:
+            try:
+                answers.append(doc.get_top_answer(q).get_parts_as_text())
+            except:
+                answers.append("No answer provided.")
+        
+        print(url)
+        for i in range(len(answers)):
+            print(answers[i])
+        print("\n")
+        
+    for url in articlesCNN:
+        article = getTextAndDateFromSiteCNN(url)
+        doc = Document.from_text(article[0] + article[1] +article[2], article[3])
+        doc = extractor.parse(doc)
+        
+        answers = []
+        
+        for q in questions:
+            try:
+                answers.append(doc.get_top_answer(q).get_parts_as_text())
+            except:
+                answers.append("No answer provided.")
+        
+        print(url)
+        for i in range(len(answers)):
+            print(answers[i])
+        print("\n")
+        
+    for url in articlesEuro:
+        article = getTextAndDateFromSiteEuro(url)
         doc = Document.from_text(article[0] + article[1] +article[2], article[3])
         doc = extractor.parse(doc)
         
