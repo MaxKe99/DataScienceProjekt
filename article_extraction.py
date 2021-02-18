@@ -8,7 +8,7 @@ from Giveme5W1H.extractor.tools.file.handler import Handler
 # giveme5w1h-corenlp
 
 if __name__ == '__main__':
-    basePath = '/home/mkette2s/DataScienceProjekt/'
+    basePath = os.path.dirname(__file__)
 
     # logger setup
     log = logging.getLogger('GiveMe5W')
@@ -20,7 +20,7 @@ if __name__ == '__main__':
     # giveme5w setup - with defaults
     extractor = MasterExtractor()
 
-    inputPath = basePath + '/data/bbc.com'
+    inputPath = basePath + '/data/bbc.com/data'
     outputPath = basePath + '/output'
     preprocessedPath = basePath + '/cache'
 
