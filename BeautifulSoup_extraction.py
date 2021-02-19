@@ -31,32 +31,34 @@ articles = ['https://www.bbc.com/news/business-55390858',
             'https://www.bbc.com/news/technology-55403473',
             'https://www.bbc.com/news/technology-55415350',
             'https://www.bbc.com/news/technology-55426212',
-            "https://www.nytimes.com/2020/12/21/business/eurostar-pandemic-train-europe.html",
-            "https://www.nytimes.com/2020/12/20/business/economy/stimulus-bill-congress.html",
-            "https://www.nytimes.com/2020/12/21/business/stocks-sink-as-a-fast-spreading-virus-strain-emerges-in-britain-and-overshadows-a-stimulus-deal.html",
-            "https://www.nytimes.com/2020/12/17/business/the-bank-of-england-holds-interest-rates-steady-as-brexit-talks-continue.html",
-            "https://www.nytimes.com/2020/12/17/business/coinbase-ipo.html",
-            "https://www.nytimes.com/2020/12/20/arts/television/snl-joe-biden-jim-carrey-kristen-wiig.html",
-            "https://www.nytimes.com/2020/12/17/movies/kim-ki-duk-dead.html",
-            "https://www.nytimes.com/2020/12/11/arts/dance/othella-dallas-dead.html",
-            "https://www.nytimes.com/2020/11/24/arts/television/chappelles-show-netflix.html",
-            "https://www.nytimes.com/2020/12/16/arts/music/break-it-all-latin-rock-netflix.html",
-            "https://www.nytimes.com/2020/12/22/us/politics/trump-pardons.html",
-            "https://www.nytimes.com/2020/12/22/us/politics/trump-coronavirus-bill.html",
-            "https://www.nytimes.com/2020/12/22/us/politics/mbs-saudi-immunity-trump.html",
-            "https://www.nytimes.com/2020/12/22/us/politics/whats-in-the-covid-relief-bill.html",
-            "https://www.nytimes.com/2020/12/21/us/politics/coronavirus-stimulus-deal.html",
-            "https://www.nytimes.com/2020/12/16/sports/soccer/liverpool-tottenham.html",
-            "https://www.nytimes.com/2020/12/16/sports/soccer/concussion-substitutes-ifab.html",
-            "https://www.nytimes.com/2020/12/15/sports/basketball/wme-endeavor-bda-sports-bill-duffy.html",
-            "https://www.nytimes.com/2020/12/14/sports/golf/us-womens-open-winner-a-lim-kim.html",
-            "https://www.nytimes.com/2020/12/14/sports/baseball/jared-porter-mets.html",
-            "https://www.nytimes.com/2020/12/18/technology/big-tech-should-try-radical-candor.html",
-            "https://www.nytimes.com/2020/12/18/technology/cyberpunk-2077-refund.html",
-            "https://www.nytimes.com/2020/12/17/technology/google-antitrust-monopoly.html",
-            "https://www.nytimes.com/2020/12/22/technology/augmented-reality-online-shopping.html",
-            "https://www.nytimes.com/2020/12/22/technology/georgia-senate-runoff-misinformation.html",
             ]
+
+articlesNYT = ["https://www.nytimes.com/2020/12/21/business/eurostar-pandemic-train-europe.html",
+               "https://www.nytimes.com/2020/12/20/business/economy/stimulus-bill-congress.html",
+               "https://www.nytimes.com/2020/12/21/business/stocks-sink-as-a-fast-spreading-virus-strain-emerges-in-britain-and-overshadows-a-stimulus-deal.html",
+               "https://www.nytimes.com/2020/12/17/business/the-bank-of-england-holds-interest-rates-steady-as-brexit-talks-continue.html",
+               "https://www.nytimes.com/2020/12/17/business/coinbase-ipo.html",
+               "https://www.nytimes.com/2020/12/20/arts/television/snl-joe-biden-jim-carrey-kristen-wiig.html",
+               "https://www.nytimes.com/2020/12/17/movies/kim-ki-duk-dead.html",
+               "https://www.nytimes.com/2020/12/11/arts/dance/othella-dallas-dead.html",
+               "https://www.nytimes.com/2020/11/24/arts/television/chappelles-show-netflix.html",
+               "https://www.nytimes.com/2020/12/16/arts/music/break-it-all-latin-rock-netflix.html",
+               "https://www.nytimes.com/2020/12/22/us/politics/trump-pardons.html",
+               "https://www.nytimes.com/2020/12/22/us/politics/trump-coronavirus-bill.html",
+               "https://www.nytimes.com/2020/12/22/us/politics/mbs-saudi-immunity-trump.html",
+               "https://www.nytimes.com/2020/12/22/us/politics/whats-in-the-covid-relief-bill.html",
+               "https://www.nytimes.com/2020/12/21/us/politics/coronavirus-stimulus-deal.html",
+               "https://www.nytimes.com/2020/12/16/sports/soccer/liverpool-tottenham.html",
+               "https://www.nytimes.com/2020/12/16/sports/soccer/concussion-substitutes-ifab.html",
+               "https://www.nytimes.com/2020/12/15/sports/basketball/wme-endeavor-bda-sports-bill-duffy.html",
+               "https://www.nytimes.com/2020/12/14/sports/golf/us-womens-open-winner-a-lim-kim.html",
+               "https://www.nytimes.com/2020/12/14/sports/baseball/jared-porter-mets.html",
+               "https://www.nytimes.com/2020/12/18/technology/big-tech-should-try-radical-candor.html",
+               "https://www.nytimes.com/2020/12/18/technology/cyberpunk-2077-refund.html",
+               "https://www.nytimes.com/2020/12/17/technology/google-antitrust-monopoly.html",
+               "https://www.nytimes.com/2020/12/22/technology/augmented-reality-online-shopping.html",
+               "https://www.nytimes.com/2020/12/22/technology/georgia-senate-runoff-misinformation.html",
+               ]
 
 articlesCNN = ["https://edition.cnn.com/2020/12/18/investing/tesla-sp500-winners/index.html",
                "https://edition.cnn.com/2020/12/20/investing/elon-musk-bitcoin-dogecoin/index.html",
@@ -122,7 +124,7 @@ def monthHelper(str):
     else:
         return "00"
 
-def getTextAndDateFromSite(url):
+def getTextAndDateFromSiteBBC(url):
 
     res = requests.get(url)
     html_page = res.content
@@ -144,8 +146,40 @@ def getTextAndDateFromSite(url):
 		'input',
 		'script'
 		]
-    text = soup.find_all('p')
-    for t in text:
+    text_raw = soup.find_all('p', {"class": ".ssrcss-uf6wea-RichTextComponentWrapper"})
+    for t in text_raw:
+	if t.parent.name not in blacklist:
+	    text += '{} '.format(t.text)
+			
+    textAndDate.append(text) # Haupttext
+    textAndDate.append(soup.time.attrs['datetime'].replace('T', ' ').replace('Z', '')[:-4]) # Datum
+		
+    return textAndDate
+
+def getTextAndDateFromSiteNYT(url):
+
+    res = requests.get(url)
+    html_page = res.content
+    soup = BeautifulSoup(html_page, 'lxml')
+    
+    textAndDate = []
+
+    textAndDate.append(soup.find('h1').text) # Headline
+    textAndDate.append(soup.find('p').text)  # Erster Paragraph
+	
+    text = """ """ 
+    blacklist = [
+		'[document]',
+		'noscript',
+		'header',
+		'html',
+		'meta',
+		'head', 
+		'input',
+		'script'
+		]
+    text_raw = soup.find_all('p')
+    for t in text_raw:
 	if t.parent.name not in blacklist:
 	    text += '{} '.format(t.text)
 			
@@ -155,56 +189,53 @@ def getTextAndDateFromSite(url):
     return textAndDate
     
 def getTextAndDateFromSiteCNN(url):
-	res = requests.get(url)
-	html_page = res.content
+    res = requests.get(url)
+    html_page = res.content
+    soup = BeautifulSoup(html_page, 'lxml')
+    
+    textAndDate = []
 	
-	soup = BeautifulSoup(html_page, 'lxml')
-	text = soup.find_all("div", {"class": "zn-body__paragraph"})
-	
-	result = []
-	
-	result.append(soup.find('h1').text)
-	result.append(soup.find('p').text)
-	
-	output = """ """
-	blacklist = [
-		'[document]',
-		'noscript',
-		'header',
-		'html',
-		'meta',
-		'head', 
-		'input',
-		'script'
-		]
-
-	for t in text:
-		if t.parent.name not in blacklist:
-			output += '{} '.format(t.text)
+    textAndDate.append(soup.find('h1').text) # Headline
+    textAndDate.append(soup.find('p').text) # Erster Paragraph
+    
+    	
+    text = """ """
+    blacklist = [
+                 '[document]',
+                 'noscript',
+                 'header',
+                 'html',
+                 'meta',
+                 'head', 
+                 'input',
+                 'script'
+		 ]
+    text_raw = soup.find_all("div", {"class": "zn-body__paragraph"})
+    for t in text_raw:
+    	if t.parent.name not in blacklist:
+            text += '{} '.format(t.text)
 			
-			
-	result.append(output)
-	date = soup.find("p", {"class": "update-time"}).text[28:][:17]
-	dateForm = ""
-	dateForm += date[-4:] + "-" + monthHelper(date[:11])
-	result.append(dateForm)
+	
+    textAndDate.append(text) # Haupttext
+    date = soup.find("p", {"class": "update-time"}).text[28:][:17]
+    dateForm = ""
+    dateForm += date[-4:] + "-" + monthHelper(date[:11])
+    textAndDate.append(dateForm) # Datum
 		
-	return result
+    return textAndDate
     
 def getTextAndDateFromSiteEuro(url):
-	res = requests.get(url)
-	html_page = res.content
+    res = requests.get(url)
+    html_page = res.content
+    soup = BeautifulSoup(html_page, 'lxml')
+    
+    textAndDate = []
 	
-	soup = BeautifulSoup(html_page, 'lxml')
-	text = soup.find_all('p')
+    textAndDate.append(soup.find('h1').text)
+    textAndDate.append(soup.find('p').text)
 	
-	result = []
-	
-	result.append(soup.find('h1').text)
-	result.append(soup.find('p').text)
-	
-	output = """ """
-	blacklist = [
+    text = """ """
+    blacklist = [
 		'[document]',
 		'noscript',
 		'header',
@@ -214,16 +245,15 @@ def getTextAndDateFromSiteEuro(url):
 		'input',
 		'script'
 		]
-
-	for t in text:
-		if t.parent.name not in blacklist:
-			output += '{} '.format(t.text)
-			
-			
-	result.append(output)
-	result.append(soup.time.attrs['datetime'])
+    text_raw = soup.find_all('p')
+    for t in text_raw:
+	if t.parent.name not in blacklist:
+	    text += '{} '.format(t.text)
+				
+    textAndDate.append(output)
+    textAndDate.append(soup.time.attrs['datetime'])
 		
-	return result
+    return textAndDate
 	
 def main():
     
@@ -236,7 +266,25 @@ def main():
     extractor = MasterExtractor()
     
     for url in articles:
-        article = getTextAndDateFromSite(url)
+        article = getTextAndDateFromSiteBBC(url)
+        doc = Document.from_text(article[0] + article[1] +article[2], article[3])
+        doc = extractor.parse(doc)
+        
+        answers = []
+        
+        for q in questions:
+            try:
+                answers.append(doc.get_top_answer(q).get_parts_as_text())
+            except:
+                answers.append("No answer provided.")
+        
+        print(url)
+        for i in range(len(answers)):
+            print(answers[i])
+        print("\n")
+
+    for url in articlesNYT:
+        article = getTextAndDateFromSiteNYT(url)
         doc = Document.from_text(article[0] + article[1] +article[2], article[3])
         doc = extractor.parse(doc)
         
