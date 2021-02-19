@@ -129,31 +129,31 @@ def getTextAndDateFromSiteBBC(url):
     res = requests.get(url)
     html_page = res.content
     soup = BeautifulSoup(html_page, 'lxml')
-    
+
     textAndDate = []
 
     textAndDate.append(soup.find('h1').text) # Headline
-    textAndDate.append(soup.find('p').text)  # Erster Paragraph
-	
+    textAndDate.append(soup.find('div', {"class": "ssrcss-uf6wea-RichTextComponentWrapper e1xue1i83"}).text)  # Erster Paragraph
+
     text = """ """ 
     blacklist = [
-		'[document]',
-		'noscript',
-		'header',
-		'html',
-		'meta',
-		'head', 
-		'input',
-		'script'
-		]
-    text_raw = soup.find_all('p', {"class": ".ssrcss-uf6wea-RichTextComponentWrapper"})
+                '[document]',
+                'noscript',
+                'header',
+                'html',
+                'meta',
+                'head', 
+                'input',
+                'script'
+                ]
+    text_raw = soup.find_all('div', {"class": "ssrcss-uf6wea-RichTextComponentWrapper e1xue1i83"})
     for t in text_raw:
-	if t.parent.name not in blacklist:
-	    text += '{} '.format(t.text)
-			
+        if t.parent.name not in blacklist:
+            text += '{} '.format(t.text)
+	
     textAndDate.append(text) # Haupttext
     textAndDate.append(soup.time.attrs['datetime'].replace('T', ' ').replace('Z', '')[:-4]) # Datum
-		
+	
     return textAndDate
 
 def getTextAndDateFromSiteNYT(url):
@@ -165,27 +165,27 @@ def getTextAndDateFromSiteNYT(url):
     textAndDate = []
 
     textAndDate.append(soup.find('h1').text) # Headline
-    textAndDate.append(soup.find('p').text)  # Erster Paragraph
-	
+    textAndDate.append(soup.find('p', {"id" : "article-summary"}).text)  # Erster Paragraph
+
     text = """ """ 
     blacklist = [
-		'[document]',
-		'noscript',
-		'header',
-		'html',
-		'meta',
-		'head', 
-		'input',
-		'script'
-		]
-    text_raw = soup.find_all('p')
+                '[document]',
+                'noscript',
+                'header',
+                'html',
+                'meta',
+                'head', 
+                'input',
+                'script'
+                ]
+    text_raw = soup.find_all('p', {"class" : "css-axufdj evys1bk0"})
     for t in text_raw:
-	if t.parent.name not in blacklist:
-	    text += '{} '.format(t.text)
-			
+        if t.parent.name not in blacklist:
+            text += '{} '.format(t.text)
+
     textAndDate.append(text) # Haupttext
     textAndDate.append(soup.time.attrs['datetime'].replace('T', ' ').replace('Z', '')[:-4]) # Datum
-		
+
     return textAndDate
     
 def getTextAndDateFromSiteCNN(url):
@@ -230,29 +230,29 @@ def getTextAndDateFromSiteEuro(url):
     soup = BeautifulSoup(html_page, 'lxml')
     
     textAndDate = []
-	
+
     textAndDate.append(soup.find('h1').text)
     textAndDate.append(soup.find('p').text)
-	
+
     text = """ """
     blacklist = [
-		'[document]',
-		'noscript',
-		'header',
-		'html',
-		'meta',
-		'head', 
-		'input',
-		'script'
-		]
+                '[document]',
+                'noscript',
+                'header',
+                'html',
+                'meta',
+                'head', 
+                'input',
+                'script'
+                ]
     text_raw = soup.find_all('p')
     for t in text_raw:
-	if t.parent.name not in blacklist:
-	    text += '{} '.format(t.text)
-				
-    textAndDate.append(output)
+        if t.parent.name not in blacklist:
+            text += '{} '.format(t.text)
+
+    textAndDate.append(text)
     textAndDate.append(soup.time.attrs['datetime'])
-		
+
     return textAndDate
 	
 def main():
@@ -318,20 +318,20 @@ def main():
         for i in range(len(answers)):
             print(answers[i])
         print("\n")
-        
+
     for url in articlesEuro:
         article = getTextAndDateFromSiteEuro(url)
         doc = Document.from_text(article[0] + article[1] +article[2], article[3])
         doc = extractor.parse(doc)
-        
+
         answers = []
-        
+
         for q in questions:
             try:
                 answers.append(doc.get_top_answer(q).get_parts_as_text())
             except:
                 answers.append("No answer provided.")
-        
+
         print(url)
         for i in range(len(answers)):
             print(answers[i])
