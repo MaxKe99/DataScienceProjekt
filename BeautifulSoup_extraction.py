@@ -21,17 +21,19 @@ articles = ['https://www.bbc.com/news/business-55390858',
             'https://www.bbc.com/news/uk-politics-55414981',
             'https://www.bbc.com/news/uk-scotland-scotland-politics-55396311',
             'https://www.bbc.com/news/uk-wales-politics-55423293',
-            'https://www.bbc.com/sport/football/55382530',
-            'https://www.bbc.com/sport/tennis/55416994',
-            'https://www.bbc.com/sport/golf/55395828',
-            'https://www.bbc.com/sport/athletics/55257397',
-            'https://www.bbc.com/sport/cycling/55337877',
             'https://www.bbc.com/news/technology-55438969',
             'https://www.bbc.com/news/technology-55439190',
             'https://www.bbc.com/news/technology-55403473',
             'https://www.bbc.com/news/technology-55415350',
             'https://www.bbc.com/news/technology-55426212',
             ]
+
+articlesBBCSport = ['https://www.bbc.com/sport/football/55382530',
+                    'https://www.bbc.com/sport/tennis/55416994',
+                    'https://www.bbc.com/sport/golf/55395828',
+                    'https://www.bbc.com/sport/athletics/55257397',
+                    'https://www.bbc.com/sport/cycling/55337877',
+                    ]
 
 articlesNYT = ["https://www.nytimes.com/2020/12/21/business/eurostar-pandemic-train-europe.html",
                "https://www.nytimes.com/2020/12/20/business/economy/stimulus-bill-congress.html",
@@ -147,6 +149,38 @@ def getTextAndDateFromSiteBBC(url):
                 'script'
                 ]
     text_raw = soup.find_all('div', {"class": "ssrcss-uf6wea-RichTextComponentWrapper e1xue1i83"})
+    for t in text_raw:
+        if t.parent.name not in blacklist:
+            text += '{} '.format(t.text)
+	
+    textAndDate.append(text) # Haupttext
+    textAndDate.append(soup.time.attrs['datetime'].replace('T', ' ').replace('Z', '')[:-4]) # Datum
+	
+    return textAndDate
+
+def getTextAndDateFromSiteBBCSport(url):
+
+    res = requests.get(url)
+    html_page = res.content
+    soup = BeautifulSoup(html_page, 'lxml')
+
+    textAndDate = []
+
+    textAndDate.append(soup.find('h1').text) # Headline
+    textAndDate.append(soup.find('p', {"class": "qa-introduction gel-pica-bold"}).text)  # Erster Paragraph
+
+    text = """ """ 
+    blacklist = [
+                '[document]',
+                'noscript',
+                'header',
+                'html',
+                'meta',
+                'head', 
+                'input',
+                'script'
+                ]
+    text_raw = soup.find_all('p', {"class": ""})
     for t in text_raw:
         if t.parent.name not in blacklist:
             text += '{} '.format(t.text)
