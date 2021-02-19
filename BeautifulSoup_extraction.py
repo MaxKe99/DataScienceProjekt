@@ -26,7 +26,7 @@ articles = ['https://www.bbc.com/news/business-55390858',
             'https://www.bbc.com/news/technology-55403473',
             'https://www.bbc.com/news/technology-55415350',
             'https://www.bbc.com/news/technology-55426212',
-            ]
+            ]   
 
 articlesBBCSport = ['https://www.bbc.com/sport/football/55382530',
                     'https://www.bbc.com/sport/tennis/55416994',
@@ -199,7 +199,10 @@ def getTextAndDateFromSiteNYT(url):
     textAndDate = []
 
     textAndDate.append(soup.find('h1').text) # Headline
-    textAndDate.append(soup.find('p', {"id" : "article-summary"}).text)  # Erster Paragraph
+    try:
+        textAndDate.append(soup.find('p', {"id" : "article-summary"}).text)  # Erster Paragraph
+    except:
+        textAndDate.append(soup.find('p', {"class" : "css-axufdj evys1bk0"}).text)  # Erster Paragraph
 
     text = """ """ 
     blacklist = [
@@ -301,6 +304,24 @@ def main():
     
     for url in articles:
         article = getTextAndDateFromSiteBBC(url)
+        doc = Document.from_text(article[0] + article[1] +article[2], article[3])
+        doc = extractor.parse(doc)
+        
+        answers = []
+        
+        for q in questions:
+            try:
+                answers.append(doc.get_top_answer(q).get_parts_as_text())
+            except:
+                answers.append("No answer provided.")
+        
+        print(url)
+        for i in range(len(answers)):
+            print(answers[i])
+        print("\n")
+
+    for url in articlesBBCSport:
+        article = getTextAndDateFromSiteBBCSport(url)
         doc = Document.from_text(article[0] + article[1] +article[2], article[3])
         doc = extractor.parse(doc)
         
