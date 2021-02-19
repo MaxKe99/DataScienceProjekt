@@ -124,17 +124,17 @@ def monthHelper(str):
 
 def getTextAndDateFromSite(url):
 
-	res = requests.get(url)
-	html_page = res.content
-	soup = BeautifulSoup(html_page, 'lxml')
+    res = requests.get(url)
+    html_page = res.content
+    soup = BeautifulSoup(html_page, 'lxml')
     
     textAndDate = []
 
-	textAndDate.append(soup.find('h1').text) # Headline
-	textAndDate.append(soup.find('p').text)  # Erster Paragraph
+    textAndDate.append(soup.find('h1').text) # Headline
+    textAndDate.append(soup.find('p').text)  # Erster Paragraph
 	
-	output = """ """ # Haupttext
-	blacklist = [
+    text = """ """ 
+    blacklist = [
 		'[document]',
 		'noscript',
 		'header',
@@ -145,14 +145,14 @@ def getTextAndDateFromSite(url):
 		'script'
 		]
     text = soup.find_all('p')
-	for t in text:
-		if t.parent.name not in blacklist:
-			output += '{} '.format(t.text)
+    for t in text:
+	if t.parent.name not in blacklist:
+	    text += '{} '.format(t.text)
 			
-	textAndDate.append(output)
-	textAndDate.append(soup.time.attrs['datetime'].replace('T', ' ').replace('Z', '')[:-4]) # Datum
+    textAndDate.append(text) # Haupttext
+    textAndDate.append(soup.time.attrs['datetime'].replace('T', ' ').replace('Z', '')[:-4]) # Datum
 		
-	return textAndDate
+    return textAndDate
     
 def getTextAndDateFromSiteCNN(url):
 	res = requests.get(url)
