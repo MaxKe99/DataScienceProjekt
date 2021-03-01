@@ -53,7 +53,7 @@ def main():
     
     extractor = MasterExtractor()
 
-    url = "https://www.nytimes.com/2021/02/22/technology/facebook-australia-news.html"
+    url = "https://www.nytimes.com/2021/02/27/health/covid-vaccine-johnson-and-johnson.html"
     
     article = getTextAndDateFromSiteNYT(url)
     doc = Document.from_text(article[0] + article[1] +article[2], article[3])
