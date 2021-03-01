@@ -56,7 +56,7 @@ def main():
     url = "https://www.nytimes.com/2021/02/27/health/covid-vaccine-johnson-and-johnson.html"
     
     article = getTextAndDateFromSiteNYT(url)
-    doc = Document.from_text(article[0] + article[1] +article[2], article[3])
+    doc = Document.from_text(article[0] + " " + article[1] + " " + article[2], article[3])
     doc = extractor.parse(doc)
         
     answers = []
